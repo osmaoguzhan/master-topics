@@ -14,11 +14,6 @@ function Card({ title, description, slug }: any) {
             <p className="max-w-xs my-4 text-xs leading-5 tracking-5 text-center text-white md:text-left">
               {description}
             </p>
-            <div className="flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0">
-              <button className="px-5 py-3 text-xs rounded-md text-zinc-800 bg-lime-500 hover:text-white duration-500">
-                Read More
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -29,6 +24,9 @@ function Card({ title, description, slug }: any) {
 export default function Home() {
   return (
     <div className="prose dark:prose-invert grid mt-2 md:grid-cols-2 gap-3">
+      <div className="text-center text-gray-600 dark:text-gray-300 col-span-full">
+        Click on a topic to learn more about it.
+      </div>
       {allTopics.map((topic: any) => (
         <Card
           key={randomUUID()}
