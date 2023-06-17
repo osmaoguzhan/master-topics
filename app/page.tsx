@@ -1,10 +1,11 @@
 import { allTopics } from "@/.contentlayer/generated";
 import { randomUUID } from "crypto";
 import Link from "next/link";
+import SearchBox from "./SearchBox";
 
 function Card({ title, description, slug }: any) {
   return (
-    <Link href={slug} className="no-underline">
+    <Link href={slug} className="no-underline" id="card">
       <div className="bg-zinc-800 dark:bg-gray-600 mx-6 rounded-2xl relative h-64 md:h-96 mt-2 hover:scale-105 transition duration-500 shadow-xl">
         <div className="flex flex-col md:flex-row rounded-l-xl">
           <div className="p-6 md:p-12">
@@ -26,6 +27,9 @@ export default function Home() {
     <div className="prose dark:prose-invert grid mt-2 md:grid-cols-2 gap-3">
       <div className="text-center text-gray-600 dark:text-gray-300 col-span-full">
         Click on a topic to learn more about it.
+      </div>
+      <div className="col-span-full">
+        <SearchBox />
       </div>
       {allTopics.map((topic: any) => (
         <Card
