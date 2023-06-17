@@ -1,0 +1,164 @@
+---
+title: Basic SQL Language Constructions
+description: Overview of basic SQL language constructions.
+date: "2023-06-17"
+---
+
+# Basic SQL Language Constructions
+
+SQL (Structured Query Language) is a programming language designed for managing and manipulating relational databases. It provides a set of constructs that allow users to query and manipulate data stored in a database. Here are some of the basic SQL language constructions:
+
+## 1. SELECT Statement
+
+The `SELECT` statement is used to retrieve data from one or more database tables. It has the following syntax:
+
+```sql
+SELECT column1, column2, ...
+FROM table_name;
+```
+
+You can specify the columns you want to retrieve from the table(s) and the table(s) from which you want to retrieve the data.
+
+## 2. WHERE Clause
+
+The WHERE clause is used to filter rows based on specified conditions. It follows the SELECT statement and has the following syntax:
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+
+The condition specifies the criteria that the rows must meet to be included in the result set.
+
+## 3. INSERT Statement
+
+The INSERT statement is used to insert new rows into a table. It has the following syntax:
+
+```sql
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+```
+
+You specify the table into which you want to insert the data and provide the values for the corresponding columns.
+
+## 4. UPDATE Statement
+
+The UPDATE statement is used to update existing rows in a table. It has the following syntax:
+
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+```
+
+You specify the table you want to update and provide the new values for the corresponding columns. The condition specifies the criteria that the rows must meet to be updated.
+
+## 5. DELETE Statement
+
+The DELETE statement is used to delete existing rows from a table. It has the following syntax:
+
+```sql
+DELETE FROM table_name
+WHERE condition;
+```
+
+You specify the table from which you want to delete the rows. The condition specifies the criteria that the rows must meet to be deleted.
+
+## 6. ORDER BY Clause
+
+The ORDER BY clause is used to sort the result set by one or more columns. It follows the SELECT statement and has the following syntax:
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+```
+
+You specify the columns by which you want to sort the result set and the sort order (ascending or descending).
+
+## 7. GROUP BY Clause
+
+The GROUP BY clause is used to group rows that have the same values in one or more columns. It follows the SELECT statement and has the following syntax:
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+GROUP BY column1, column2, ...;
+```
+
+You specify the columns by which you want to group the rows.
+
+## 8. HAVING Clause
+
+The HAVING clause is used to filter groups based on specified conditions. It follows the GROUP BY clause and has the following syntax:
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+GROUP BY column1, column2, ...
+HAVING condition;
+```
+
+The condition specifies the criteria that the groups must meet to be included in the result set.
+
+## 9. JOIN Clause
+
+The JOIN clause is used to combine rows from two or more tables based on a common column. It follows the FROM clause and has the following syntax:
+
+```sql
+SELECT column1, column2, ...
+FROM table1
+JOIN table2 ON table1.column = table2.column;
+```
+
+You specify the tables you want to join and the common column.
+
+## 10. UNION Clause
+
+The UNION clause is used to combine the result sets of two or more SELECT statements. It has the following syntax:
+
+```sql
+SELECT column1, column2, ...
+FROM table1
+UNION
+SELECT column1, column2, ...
+FROM table2;
+```
+
+You specify the SELECT statements whose result sets you want to combine.
+
+## 11. CREATE TABLE Statement
+
+The CREATE TABLE statement is used to create a new table. It has the following syntax:
+
+```sql
+CREATE TABLE table_name (
+  column1 datatype,
+  column2 datatype,
+  ...
+);
+```
+
+You specify the table name and the columns that the table will have.
+
+## 12. ALTER TABLE Statement
+
+The ALTER TABLE statement is used to add, modify, or drop columns in an existing table. It has the following syntax:
+
+```sql
+ALTER TABLE table_name
+ADD column_name datatype;
+```
+
+You specify the table name and the column you want to add.
+
+## 13. DROP TABLE Statement
+
+The DROP TABLE statement is used to delete an existing table. It has the following syntax:
+
+```sql
+DROP TABLE table_name;
+```
+
+You specify the table you want to delete.
