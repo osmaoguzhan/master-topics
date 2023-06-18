@@ -1,0 +1,157 @@
+---
+title: Computational Complexity of Algorithms
+description: Understand the computational complexity of algorithms
+date: "2023-06-18"
+asked: 0
+---
+
+# Computational Complexity of Algorithms
+
+The computational complexity of an algorithm measures the efficiency of the algorithm in terms of the resources required to execute it. It helps in understanding how the algorithm's performance scales with the input size. The most common measures of computational complexity are time complexity and space complexity.
+
+## Time Complexity
+
+Time complexity estimates the amount of time an algorithm takes to run as a function of the input size. It is commonly represented using Big O notation, which describes the upper bound or worst-case scenario of an algorithm's time complexity.
+
+## Space Complexity
+
+Space complexity measures the amount of memory or space required by an algorithm as a function of the input size. It helps determine how much additional memory the algorithm needs to store intermediate values, variables, or data structures during its execution.
+
+## Examples
+
+<table className="table-auto">
+  <thead>
+    <tr className="bg-gray-200">
+      <th className="px-4 py-2">Algorithm</th>
+      <th className="px-4 py-2">Time Complexity</th>
+      <th className="px-4 py-2">Space Complexity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className="border px-4 py-2">Bubble Sort</td>
+      <td className="border px-4 py-2">O(n^2)</td>
+      <td className="border px-4 py-2">O(1)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Insertion Sort</td>
+      <td className="border px-4 py-2">O(n^2)</td>
+      <td className="border px-4 py-2">O(1)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Selection Sort</td>
+      <td className="border px-4 py-2">O(n^2)</td>
+      <td className="border px-4 py-2">O(1)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Merge Sort</td>
+      <td className="border px-4 py-2">O(n log n)</td>
+      <td className="border px-4 py-2">O(n)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Quick Sort</td>
+      <td className="border px-4 py-2">O(n log n)</td>
+      <td className="border px-4 py-2">O(log n)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Heap Sort</td>
+      <td className="border px-4 py-2">O(n log n)</td>
+      <td className="border px-4 py-2">O(1)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Counting Sort</td>
+      <td className="border px-4 py-2">O(n + k)</td>
+      <td className="border px-4 py-2">O(k)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Radix Sort</td>
+      <td className="border px-4 py-2">O(d * (n + k))</td>
+      <td className="border px-4 py-2">O(n + k)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Bucket Sort</td>
+      <td className="border px-4 py-2">O(n^2)</td>
+      <td className="border px-4 py-2">O(n)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Binary Search</td>
+      <td className="border px-4 py-2">O(log n)</td>
+      <td className="border px-4 py-2">O(1)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Breadth-First Search</td>
+      <td className="border px-4 py-2">O(V + E)</td>
+      <td className="border px-4 py-2">O(V)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Depth-First Search</td>
+      <td className="border px-4 py-2">O(V + E)</td>
+      <td className="border px-4 py-2">O(V)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Dijkstra's Algorithm</td>
+      <td className="border px-4 py-2">O((V + E) log V)</td>
+      <td className="border px-4 py-2">O(V)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Bellman-Ford Algorithm</td>
+      <td className="border px-4 py-2">O(VE)</td>
+      <td className="border px-4 py-2">O(V)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Prim's Algorithm</td>
+      <td className="border px-4 py-2">O((V + E) log V)</td>
+      <td className="border px-4 py-2">O(V)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Kruskal's Algorithm</td>
+      <td className="border px-4 py-2">O(E log E)</td>
+      <td className="border px-4 py-2">O(E)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Floyd-Warshall Algorithm</td>
+      <td className="border px-4 py-2">O(V^3)</td>
+      <td className="border px-4 py-2">O(V^2)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Topological Sort</td>
+      <td className="border px-4 py-2">O(V + E)</td>
+      <td className="border px-4 py-2">O(V)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Knapsack Problem</td>
+      <td className="border px-4 py-2">O(nW)</td>
+      <td className="border px-4 py-2">O(nW)</td>
+    </tr>
+    <tr>
+      <td className="border px-4 py-2">Traveling Salesman Problem</td>
+      <td className="border px-4 py-2">O(n^2 * 2^n)</td>
+      <td className="border px-4 py-2">O(n * 2^n)</td>
+    </tr>
+  </tbody>
+</table>
+
+# Useful Links
+
+1. [Big O Notation: Why It Matters and Why It Doesn't](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)
+2. [Introduction to Computational Complexity Theory](https://www.geeksforgeeks.org/introduction-to-computation-complex-theory/)
+3. [YouTube Playlist: Introduction to Algorithms and Computational Complexity](https://www.youtube.com/playlist?list=PLWkYYZqxhBdBQEQ2yYRr4dSveVlsmnp0A)
+4. [What does O(log n) mean exactly?](https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly)
+5. [Big-O Notation](https://xlinux.nist.gov/dads/HTML/bigOnotation.html)
+
+# Example Questions
+
+1. **What is computational complexity?**\
+   Computational complexity refers to the study of how the performance of an algorithm or problem solution changes as the input size increases. It helps us understand the efficiency and scalability of algorithms in terms of time and space requirements.
+
+2. **What is the difference between time complexity and space complexity?**\
+   Time complexity measures how the execution time of an algorithm increases with the input size. It is typically expressed using Big O notation. Space complexity, on the other hand, measures the amount of memory or storage space required by an algorithm as the input size increases.
+
+3. **What is the significance of Big O notation in computational complexity?**\
+   Big O notation is a mathematical notation used to describe the upper bound or worst-case scenario of an algorithm's time or space complexity. It helps us compare the efficiency of different algorithms and make informed decisions when selecting the most suitable algorithm for a given problem.
+
+4. **What are some common classes of time complexity?**\
+   Some common classes of time complexity include constant time (O(1)), logarithmic time (O(log n)), linear time (O(n)), quadratic time (O(n^2)), and exponential time (O(2^n)). These classes represent different rates of growth in terms of time requirements as the input size increases.
+
+5. **How can we analyze the computational complexity of an algorithm?**\
+   Analyzing the computational complexity involves determining the number of basic operations performed by an algorithm as a function of the input size. We can analyze it through techniques like counting statements, solving recurrence relations, or using specific analysis methods based on the algorithm's characteristics.

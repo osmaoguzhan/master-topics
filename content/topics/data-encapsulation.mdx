@@ -1,0 +1,45 @@
+---
+title: "Data Encapsulation"
+description: "Data Encapsulation"
+date: "2023-06-18"
+asked: 0
+---
+
+# Data Encapsulation
+
+Data encapsulation is a mechanism of bundling the data, and the functions that use them and data abstraction is a mechanism of exposing only the interfaces and hiding the implementation details from the user. The aim of encapsulation is to hide all data from user and when it is needed to reach the data, provide the getter and setter methods for these fields.
+
+A class can contain private, protected and public variables and methods as privacy levels. By default, all items defined in a class are private. So, these kind of items are only reachable within class. If they want to be reached outside of class, there are two options:
+
+1. Privacy level of variables and methods should change to public or protected.
+2. There should be a public getter and setter methods for each private fields to access them from outside of class.
+
+## Advantages of Encapsulation:
+
+1. By providing only a setter or getter method, you can make the class read-only (only provide getter methods) or write-only (only provide setter methods).
+2. It provides you the control over the data.
+3. It is a way to achieve data hiding. Because other class will not be able to access the data through the private data members.
+4. The encapsulate class is easy to test. So, it is better for unit testing.
+
+# Useful Links
+
+1. [Data Encapsulation](https://www.tutorialspoint.com/cplusplus/cpp_data_encapsulation.htm)
+2. [Encapsulation in C++](https://www.geeksforgeeks.org/encapsulation-in-c/)
+3. [Encapsulation](https://www.javatpoint.com/encapsulation)
+
+# Example Questions
+
+1. **What is the purpose of data encapsulation in object-oriented programming?**\
+   The purpose of data encapsulation in object-oriented programming is to bundle data and the functions that operate on that data together as a single unit, hiding the internal implementation details from the user. Encapsulation allows for data protection and controlled access by providing public interfaces (methods) to interact with the data while keeping the data itself private or protected. This promotes better code organization, modularity, and reduces dependencies on internal implementation details.
+
+2. **How does data encapsulation contribute to data hiding in object-oriented programming?**\
+   Data encapsulation contributes to data hiding by making the internal data members of a class private or protected. By doing so, the data cannot be directly accessed or modified from outside the class. Instead, external access is provided through getter and setter methods, which allow controlled access to the data. This ensures that the internal representation and state of the object are protected and can only be modified according to the defined rules and constraints provided by the class.
+
+3. **What are the advantages of using data encapsulation in software development?**\
+   There are several advantages of using data encapsulation in software development:
+
+- Control over data: Encapsulation provides control over how data is accessed and modified by external entities. It allows for validation, error handling, and maintaining data integrity.
+- Readability and maintainability: By encapsulating data, the code becomes more readable and maintainable as implementation details are hidden. Changes to the internal representation or behavior of the class can be made without affecting other parts of the code.
+- Data protection and security: Encapsulation protects data from unauthorized access and modification. Only the defined public interfaces (methods) can interact with the data, ensuring data security and preventing accidental misuse.
+- Testing and debugging: Encapsulated classes are easier to test and debug since they provide well-defined interfaces and encapsulate the complexity of internal implementation details. Unit testing can be performed on individual methods without exposing the underlying data.
+- Code reusability: Encapsulation promotes code reusability by allowing objects to be used in different contexts without exposing their internal data and implementation details. This enhances modularity and reduces code duplication.

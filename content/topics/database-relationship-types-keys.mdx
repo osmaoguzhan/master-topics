@@ -1,0 +1,58 @@
+---
+title: DB Design - Relationship Types and Keys
+description: Relationship types, primary keys, and foreign keys.
+date: "2023-06-18"
+asked: 0
+---
+
+# Database Design - Relationship Types, Primary Keys, and Foreign Keys
+
+Database design involves organizing and structuring data in a database system. It includes defining tables, relationships between tables, and ensuring data integrity through primary keys and foreign keys. Here's an overview of relationship types, primary keys, and foreign keys in database design:
+
+## Relationship Types
+
+In relational database design, there are three main types of relationships between tables:
+
+1. **One-to-One (1:1) Relationship**
+
+   - In a one-to-one relationship, each record in one table is associated with exactly one record in another table.
+   - This relationship is established by sharing a common key between the related tables.
+   - One-to-one relationships are relatively rare and are often used to divide a large table into two or more smaller tables for optimization or organization purposes.
+
+2. **One-to-Many (1:N) Relationship**
+
+   - In a one-to-many relationship, a record in one table can be associated with one or more records in another table.
+   - The relationship is established by linking the primary key of the "one" table to the foreign key of the "many" table.
+   - One-to-many relationships are the most common type of relationship in database design.
+
+3. **Many-to-Many (N:M) Relationship**
+   - In a many-to-many relationship, records in one table can be associated with multiple records in another table, and vice versa.
+   - This relationship is implemented using an intermediary table that represents the association between the two tables.
+   - Many-to-many relationships are resolved by breaking them down into two one-to-many relationships through the intermediary table.
+
+## Primary Key
+
+A primary key is a unique identifier for each record in a table. It ensures the uniqueness and integrity of the data within the table. Here are some key characteristics of primary keys:
+
+- A primary key must have a unique value for each record in the table.
+- It cannot contain NULL values.
+- Primary keys can be single columns or a combination of multiple columns (composite key) if needed.
+- Primary keys are typically defined when creating the table and are used to uniquely identify each record.
+
+## Foreign Key
+
+A foreign key is a field in one table that refers to the primary key in another table, establishing a relationship between the two tables. Here are some key characteristics of foreign keys:
+
+- A foreign key maintains referential integrity by ensuring that the values in the foreign key column match the values in the primary key column of the referenced table.
+- It creates a link between related tables, allowing the retrieval and manipulation of data across tables through join operations.
+- Foreign keys can have NULL values, indicating that there is no matching record in the referenced table.
+- Foreign keys are typically defined when creating or altering the table and are used to establish and enforce relationships between tables.
+
+Proper use of relationship types, primary keys, and foreign keys is essential for data integrity, data retrieval, and maintaining the overall structure of a relational database.
+
+# Useful Links
+
+1. [GeeksforGeeks - Difference Between Primary Key and Foreign Key](https://www.geeksforgeeks.org/difference-between-primary-key-and-foreign-key/)
+2. [SQL Shack - Learn SQL: Types of Relations](https://www.sqlshack.com/learn-sql-types-of-relations/)
+3. [DePaul University - Database Relationships](https://condor.depaul.edu/gandrus/240IT/accesspages/relationships.htm)
+4. [Oracle Documentation - Define a Relationship](https://docs.oracle.com/html/E79061_01/Content/Data%20model/Define_a_relationship.htm)

@@ -1,0 +1,132 @@
+---
+title: "Comparison: Object-Oriented Programming vs Structured Programming"
+description: "OOP vs Structured Programming"
+date: "2023-06-18"
+asked: 0
+---
+
+# Comparison: Object-Oriented Programming vs Structured Programming
+
+## Object-Oriented Programming
+
+Object-Oriented Programming is a programming paradigm that focuses on creating objects that contain both data and methods to manipulate that data. It revolves around the concept of objects, which are instances of classes. OOP emphasizes code reusability, modularity, and encapsulation.
+
+Example code snippet in Python:
+
+```python
+# Class definition
+
+class Rectangle:
+def **init**(self, width, height):
+self.width = width
+self.height = height
+
+    def calculate_area(self):
+        return self.width * self.height
+
+# Object creation
+
+rect = Rectangle(5, 3)
+
+# Method invocation
+
+area = rect.calculate_area()
+print("Area:", area)
+```
+
+## Structured Programming
+
+Structured Programming is a programming paradigm that organizes code into reusable functions or procedures. It focuses on breaking down a problem into smaller modules and uses control structures like loops and conditionals to manage program flow. Structured programming emphasizes top-down design and procedural abstraction.
+
+Example code snippet in C:
+
+```C
+#include <stdio.h>
+
+// Function definition
+int calculateSum(int num1, int num2) {
+    return num1 + num2;
+}
+
+int main() {
+    int a = 5;
+    int b = 3;
+
+    // Function call
+    int sum = calculateSum(a, b);
+    printf("Sum: %d\n", sum);
+
+    return 0;
+}
+```
+
+## Comparison
+
+<table className="table-auto border-2">
+  <thead>
+    <tr className="bg-gray-200">
+      <th className="px-4 py-2">Aspect</th>
+      <th className="px-4 py-2">Object-Oriented Programming</th>
+      <th className="px-4 py-2">Structured Programming</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className="px-4 py-2">Data and Function Handling</td>
+      <td className="px-4 py-2">Objects encapsulate data and methods</td>
+      <td className="px-4 py-2">Functions/procedures operate on data</td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2">Code Organization</td>
+      <td className="px-4 py-2">Organized around classes and objects</td>
+      <td className="px-4 py-2">Organized around functions and procedures</td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2">Modularity</td>
+      <td className="px-4 py-2">
+        Promotes modularity and code reusability through class hierarchy
+      </td>
+      <td className="px-4 py-2">Divides code into reusable functions</td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2">Data Hiding</td>
+      <td className="px-4 py-2">Supports data hiding and encapsulation</td>
+      <td className="px-4 py-2">No built-in mechanism for data hiding</td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2">Program Flow Control</td>
+      <td className="px-4 py-2">
+        Uses objects and messages for program flow control
+      </td>
+      <td className="px-4 py-2">
+        Uses control structures (loops, conditionals) for program flow control
+      </td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2">Inheritance</td>
+      <td className="px-4 py-2">Supports inheritance and polymorphism</td>
+      <td className="px-4 py-2">No inherent support for inheritance</td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2">Code Complexity</td>
+      <td className="px-4 py-2">Well-suited for handling complex systems</td>
+      <td className="px-4 py-2">Better for simpler and smaller programs</td>
+    </tr>
+  </tbody>
+</table>
+
+# Useful Links
+
+1. [Object-Oriented Programming (OOP)](https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP)
+2. [Structured Programming](https://en.wikipedia.org/wiki/Structured_programming)
+
+# Example Questions
+
+1. **What is the main difference between Object-Oriented Programming (OOP) and Structured Programming?**\
+   The main difference between OOP and Structured Programming is the way they organize and structure code. OOP focuses on creating objects that encapsulate data and behavior, allowing for modularity, code reuse, and easier maintenance. On the other hand, Structured Programming uses functions and procedures to organize code, emphasizing procedural abstraction and breaking down the program into smaller, manageable components.
+
+2. **How does Object-Oriented Programming (OOP) promote code reusability?**\
+   OOP promotes code reusability through the concept of inheritance. Inheritance allows classes to inherit properties and behaviors from other classes, forming a hierarchical relationship. By creating a base class with common attributes and methods, derived classes can inherit and extend those features, reducing code duplication. This enables developers to reuse existing code and build upon it, resulting in more efficient and modular software development.
+
+3. **What are the advantages of using Structured Programming?**\
+   Structured Programming offers several advantages. Firstly, it promotes code readability and maintainability by breaking down the program into smaller, manageable procedures or functions. This makes it easier to understand and modify the code. Secondly, Structured Programming emphasizes procedural abstraction, allowing developers to focus on specific tasks without worrying about the implementation details. Lastly, Structured Programming encourages code reusability through the use of functions, enabling developers to reuse code across different parts of the program.

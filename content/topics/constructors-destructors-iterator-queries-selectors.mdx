@@ -1,0 +1,66 @@
+---
+title: "Constructors, Destructors, Selectors, Queries, Iterators"
+description: "Method types"
+date: "2023-06-18"
+asked: 0
+---
+
+## 1. Constructors
+
+A constructor is a special method that is automatically called when an object of a class is created. At the time of calling constructor, memory for the object is allocated in the memory. Constructors can also take parameters (just like regular functions), which can be useful for setting initial values for attributes. Just like functions, constructors can also be defined outside the class.
+
+## 2. Destructors
+
+A destructor is a special method that gets called automatically as soon as the life-cycle of an object is finished. A destructor is called to de-allocate and free memory. No arguments can be passed in a destructor. So, they cannot take parameters.
+
+## 3. Selectors
+
+A selector can be used to refer simply to the name of a method when it’s used in a source-code message to an object. It also, though, refers to the unique identifier that replaces the name when the source code is compiled. All methods with the same name have the same selector.
+
+## 4. Queries
+
+A query is used to extract data from the database. In Java, if you need to fetch data from database, then you need to write a query for fetching the data in your desired format.
+
+## 5. Iterators
+
+An Iterator is an object that can be used to loop through collections, like a list or set. It is called an "iterator" because "iterating" is the technical term for looping. Iterators can be used for:
+
+- Performing an action on each item in a collection.
+- Enumerating a custom collection.
+- Creating a data pipeline where data flows efficiently through iterator methods.
+
+# Useful Links
+
+1. [Constructors](https://www.w3schools.com/cpp/cpp_constructors.asp)
+2. [Java Constructor](https://www.javatpoint.com/java-constructor)
+3. [Selectors](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocSelectors.html)
+
+# Example Questions
+
+1. **What is the purpose of a constructor in object-oriented programming? How does it differ from other methods?**\
+   A constructor is a special method that is automatically called when an object of a class is created. Its purpose is to initialize the object's attributes and set it up for use. Unlike regular methods, constructors have the following characteristics:
+
+- Constructors have the same name as the class they belong to.
+- Constructors do not have a return type, not even void.
+- Constructors are automatically invoked when an object is created, and their execution is mandatory.
+- Constructors can be overloaded, allowing for multiple constructors with different parameters.
+
+2. **What is the role of a destructor in object-oriented programming? How is it different from a constructor?**\
+   A destructor is a special method that is automatically called when the life-cycle of an object ends, typically when the object is no longer in use or goes out of scope. The main aspects of destructors are:
+
+- Destructors have the same name as the class preceded by a tilde (~).
+- Destructors do not have parameters and return types.
+- Destructors are automatically invoked when an object is destroyed, and their execution is optional.
+- Destructors are responsible for releasing resources, such as freeing memory or closing open files.
+
+  While constructors are used for object initialization, destructors handle the cleanup tasks when an object is no longer needed.
+
+3. **What are iterators in programming, and what are their main uses?**\
+   Iterators are objects that provide a way to traverse and access elements within a collection, such as lists, sets, or other data structures. The key points about iterators are:
+
+- Iterators abstract the process of accessing elements, making it easier to loop over collections.
+- Iterators provide methods to move forward or backward, access the current element, and check if there are more elements available.
+- Iterators allow for performing actions on each item in a collection, enumerating custom collections, and creating data pipelines.
+- Iterators enhance code readability, efficiency, and provide a uniform way to access elements regardless of the underlying data structure.
+
+  By using iterators, developers can write more concise and flexible code when working with collections.

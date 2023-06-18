@@ -3,6 +3,7 @@ import { allTopics } from "contentlayer/generated";
 
 import { Metadata } from "next";
 import { Mdx } from "@/components/mdx-components";
+import CopyButton from "@/components/CopyButton";
 
 interface TopicsProp {
   params: {
@@ -40,8 +41,11 @@ export default async function TopicPage({ params }: TopicsProp) {
   if (!topic) return notFound();
 
   return (
-    <article className="py-6 prose dark:prose-invert">
+    <article className="py-6 prose dark:prose-invert max-w-full px-10">
       <Mdx code={topic.body.code} />
+      <div className="flex flex-col items-center justify-center">
+        <CopyButton />
+      </div>
     </article>
   );
 }

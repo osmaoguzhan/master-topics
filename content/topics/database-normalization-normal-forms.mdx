@@ -1,0 +1,50 @@
+---
+title: Database Normalization - Normal Forms
+description: Overview of database normalization and the different normal forms.
+date: "2023-06-18"
+asked: 0
+---
+
+# Database Normalization - Normal Forms
+
+Database normalization is a process in database design that helps eliminate data redundancy and improve data integrity by organizing data into well-structured tables. The normalization process involves applying a set of rules called normal forms. Here's an overview of the different normal forms:
+
+## First Normal Form (1NF)
+
+- Each column in a table must have a unique name.
+- Each column value must be atomic (indivisible).
+- There should be a primary key that uniquely identifies each row.
+- There should be no repeating groups of columns.
+
+## Second Normal Form (2NF)
+
+- The table must satisfy all the requirements of 1NF.
+- All non-key attributes must depend on the entire primary key.
+- If a non-key attribute depends on only a part of the primary key, it should be moved to a separate table.
+
+## Third Normal Form (3NF)
+
+- The table must satisfy all the requirements of 2NF.
+- There should be no transitive dependencies, where a non-key attribute depends on another non-key attribute.
+
+## Boyce-Codd Normal Form (BCNF)
+
+- The table must satisfy all the requirements of 3NF.
+- It must also ensure that every determinant (attribute or set of attributes) is a candidate key.
+
+## Fourth Normal Form (4NF)
+
+- The table must satisfy all the requirements of BCNF.
+- It should prevent multi-valued dependencies, where a non-key attribute depends on a combination of attributes that form a candidate key.
+
+## Fifth Normal Form (5NF)
+
+- The table must satisfy all the requirements of 4NF.
+- It should eliminate join dependencies, where data can be derived by joining multiple tables.
+
+Database normalization helps in achieving data consistency, reducing data redundancy, and improving query performance. By applying the different normal forms, database designers can create efficient and well-structured database schemas.
+
+# Useful Links
+
+1. [Guru99 - Database Normalization](https://www.guru99.com/database-normalization.html)
+2. [GeeksforGeeks - Normal Forms in DBMS](https://www.geeksforgeeks.org/normal-forms-in-dbms/)

@@ -1,0 +1,62 @@
+---
+title: Graph Path-Finding Algorithms
+description: Overview of graph path-finding algorithms.
+date: "2023-06-18"
+asked: 0
+---
+
+# Graph Path-Finding Algorithms
+
+Path finding algorithms build on top of graph search algorithms and explore routes between nodes, starting at one node and traversing through relationships until the destination has been reached. These algorithms find the cheapest path in terms of the number of hops or weight. Weights can be anything measured, such as time, distance, capacity, or cost.
+
+There are some path finding algorithms below:
+
+## 1. Shortest Path
+
+The Shortest Path algorithm calculates the shortest (weighted) path between a pair of nodes. Shortest path is considered to be one of the classical graph problems and has been researched as far back as the 19th century.
+
+## 2. Single Source Shortest Path
+
+The Single Source Shortest Path algorithm calculates the shortest (weighted) path from a node to all other nodes in the graph.
+
+## 3. All-Pairs Shortest Path
+
+The All Pairs Shortest Path calculates the shortest (weighted) path between all pairs of nodes. This algorithm has optimizations that make it quicker than calling the Single Source Shortest Path algorithm for every pair of nodes in the graph.
+
+## 4. Dijkstra Algorithm
+
+Dijkstra’s algorithm tries to find the shortest path from the starting(root) node to every node, hence we can get the shortest path from the starting node to the goal. Time complexity of algorithm is O(V^2), where V = number of vertices.
+
+## 5. Greedy algorithm
+
+Greedy is an algorithm which makes a choice based on educated guesses(heuristics) at each stage. The node with shortest heuristic distance from the goal node will be explored next. Time complexity of algorithm is O(N \* logN), where N = number of items.
+
+## 6. The A\* algorithm
+
+A\* is a combination of Dijkstra and Greedy. It uses distance from the root node plus heuristics distance to the goal. The algorithm terminates when we find the goal node. Time complexity of algorithm is depends on heuristic.
+
+# Useful Links
+
+1. [GeeksforGeeks - Graph Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+2. [TutorialsPoint - Graph Algorithms](https://www.tutorialspoint.com/graph_theory/graph_theory_algorithms.htm)
+3. [Brilliant - Graph Theory Fundamentals](https://brilliant.org/wiki/graph-theory-fundamentals/)
+
+# Example Questions
+
+1. **What is the main difference between the Shortest Path algorithm and the Single Source Shortest Path algorithm?**\
+   The Shortest Path algorithm calculates the shortest path between a pair of nodes, while the Single Source Shortest Path algorithm calculates the shortest path from a single source node to all other nodes in the graph.
+
+2. **What is the advantage of using the All-Pairs Shortest Path algorithm over calling the Single Source Shortest Path algorithm for every pair of nodes?**
+   The All-Pairs Shortest Path algorithm is optimized to calculate the shortest path between all pairs of nodes more efficiently than calling the Single Source Shortest Path algorithm multiple times.
+
+3. **What is the purpose of the heuristic function in the A Algorithm?**\
+   The heuristic function in the A\* Algorithm provides an estimation of the remaining cost to reach the goal from each vertex. It guides the algorithm to prioritize exploring vertices that are closer to the goal, helping to improve efficiency in finding the optimal path.
+
+4. **What is the time complexity of Dijkstra's algorithm for finding the shortest path?**\
+   The time complexity of Dijkstra's algorithm is O(V^2), where V represents the number of vertices in the graph.
+
+5. **What are some common applications of graph path-finding algorithms?**\
+   Graph path-finding algorithms have various applications, such as route planning for navigation systems, network routing in computer networks, game AI for character movement and decision-making, and optimization problems in logistics and transportation.
+
+6. **What is the time complexity of the A algorithm?**\
+   The time complexity of the A\* algorithm depends on the heuristic function used. It combines Dijkstra's algorithm and Greedy algorithm, utilizing distance from the root node plus heuristic distance to the goal. The actual time complexity varies depending on the specific heuristic used.

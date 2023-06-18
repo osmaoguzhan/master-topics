@@ -1,0 +1,66 @@
+---
+title: Iteration vs Recursion
+description: Iteration vs Recursion
+date: "2023-06-18"
+asked: 0
+---
+
+# Iteration and Recursion
+
+In programming, iteration and recursion are two commonly used techniques for solving problems and implementing algorithms. Both approaches involve repeatedly executing a set of instructions, but they differ in how they control the flow of execution.
+
+## Iteration
+
+Iteration is a process of repeatedly executing a block of code until a certain condition is met. It involves using loops, such as for loops, while loops, or do-while loops, to iterate over a set of instructions. The loop condition determines whether the loop should continue or terminate.
+
+Iterative algorithms are often used when the problem can be divided into smaller, repetitive tasks. They are typically implemented using looping constructs, which allow the program to execute a set of statements multiple times until a specific condition is satisfied.
+
+## Recursion
+
+Recursion is a process of solving a problem by breaking it down into smaller subproblems of the same nature. In a recursive algorithm, a function calls itself one or more times to solve a smaller instance of the problem. Each recursive call operates on a smaller input, and the results are combined to solve the original problem.
+
+Recursive algorithms are often used when the problem can be reduced to a simpler version of the same problem. They involve defining a base case that specifies the terminating condition, and recursive cases that define how to break down the problem into smaller subproblems.
+
+## Implementation Examples
+
+### Iteration Example (Factorial Calculation)
+
+```java
+
+public int factorial(int n) {
+int result = 1;
+for (int i = 1; i <= n; i++) {
+result _= i;
+}
+return result;
+}
+```
+
+### Recursion Example (Factorial Calculation)
+
+```java
+public int factorial(int n) {
+if (n == 0 || n == 1) {
+return 1;
+} else {
+return n _ factorial(n - 1);
+}
+}
+```
+
+These examples demonstrate the implementation of factorial calculation using iteration and recursion in Java. The iterative approach uses a for loop to calculate the factorial by multiplying numbers from 1 to the given input. The recursive approach breaks down the problem by calling the factorial function recursively with a smaller input until reaching the base case.
+
+# Useful Links
+
+- [Difference Between Recursion and Iteration](https://www.tutorialspoint.com/difference-between-recursion-and-iteration#:~:text=Recursion%20and%20Iteration%20both%20repeatedly,the%20controlling%20condition%20becomes%20false.)
+
+# Example Questions
+
+1. **Explain the concept of iteration in programming and provide an example of an iterative algorithm in any programming language of your choice.**\
+   Iteration is a process of repeatedly executing a block of code until a certain condition is met. It involves using loops, such as for loops, while loops, or do-while loops. These loops allow the program to execute a set of statements multiple times until a specific condition is satisfied. An example of an iterative algorithm is the calculation of the factorial of a number using a for loop in Java, as shown in the previous code snippet.
+
+2. **Describe the concept of recursion in programming and provide an example of a recursive algorithm in any programming language of your choice.**\
+   Recursion is a process of solving a problem by breaking it down into smaller subproblems of the same nature. In a recursive algorithm, a function calls itself one or more times to solve a smaller instance of the problem. Each recursive call operates on a smaller input, and the results are combined to solve the original problem. An example of a recursive algorithm is the calculation of the factorial of a number using a recursive function in Java, as shown in the previous code snippet.
+
+3. **Compare and contrast iteration and recursion in terms of their control flow mechanisms and problem-solving approaches.**\
+   Iteration and recursion are both techniques used for solving problems and implementing algorithms, but they differ in their control flow mechanisms and problem-solving approaches. Iteration uses looping constructs, such as for loops or while loops, to repeatedly execute a set of statements until a specific condition is met. It is suitable for problems that can be divided into smaller, repetitive tasks. Recursion, on the other hand, involves breaking down a problem into smaller subproblems and solving them recursively by calling the same function. It relies on function calls and a termination condition (base case) to control the flow of execution. Recursion is often used for problems that can be reduced to a simpler version of the same problem.

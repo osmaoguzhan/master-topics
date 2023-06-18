@@ -1,0 +1,50 @@
+---
+title: "Inheritance and Dynamic Polymorphism"
+description: "Inheritance and Dynamic Polymorphism"
+date: "2023-06-18"
+asked: 0
+---
+
+# Inheritance and Dynamic Polymorphism
+
+## 1. Inheritance:
+
+Inheritance is a mechanism in which one object acquires all the properties and behaviors of a parent object. It is an important part of Object Oriented programming system. Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+The idea behind inheritance is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also.
+Terms used in Inheritance:
+Class: A class is a group of objects which have common properties. It is a template or blueprint from which objects are created.
+Sub Class/Child Class: Subclass is a class which inherits the other class. It is also called a derived class, extended class, or child class.
+Super Class/Parent Class: Superclass is the class from where a subclass inherits the features. It is also called a base class or a parent class.
+Reusability: As the name specifies, reusability is a mechanism which facilitates you to reuse the fields and methods of the existing class when you create a new class.
+
+## 2. Dynamic Polymorphism:
+
+Dynamic polymorphism is a process or mechanism in which a call to an overridden method is to resolve at runtime rather than compile-time. It is also known as runtime polymorphism or dynamic method dispatch. We can achieve dynamic polymorphism by using the method overriding.
+In this process, an overridden method is called through a reference variable of a superclass. The determination of the method to be called is based on the object being referred to by the reference variable.
+
+# Useful Links
+
+1. [Inheritance in JAVA](https://www.javatpoint.com/inheritance-in-java)
+2. [Dynamic Polymorphism](https://www.javatpoint.com/dynamic-polymorphism-in-java#:~:text=Dynamic%20polymorphism%20is%20a%20process,by%20using%20the%20method%20overriding.)
+3. [Inheritance in C++](https://www.geeksforgeeks.org/inheritance-in-c/)
+
+# Example Questions
+
+1. **What is inheritance in object-oriented programming, and what are its benefits?**\
+   Inheritance is a mechanism in which one object acquires the properties and behaviors of another object. It allows for the creation of new classes based on existing classes, enabling code reuse and the addition of new methods and fields. The benefits of inheritance include:
+
+- Reusability: Inheritance promotes code reuse by allowing subclasses to inherit methods and fields from their parent classes.
+- Modularity: Inheritance allows for the organization of classes into a hierarchical structure, making the code modular and easier to manage.
+- Polymorphism: Inheritance facilitates dynamic polymorphism, where objects of different classes can be treated interchangeably based on their common parent class.
+
+2. **What is dynamic polymorphism, and how is it achieved in object-oriented programming?**\
+   Dynamic polymorphism, also known as runtime polymorphism, is a feature of object-oriented programming that allows for the selection of a method implementation at runtime based on the actual type of the object. It is achieved through method overriding, where a subclass provides its own implementation of a method defined in its parent class. The key points about dynamic polymorphism are:
+   The method to be executed is determined by the actual type of the object being referred to, not the reference type.
+   Dynamic polymorphism enables flexibility in designing systems where different objects can behave differently based on their specific implementations.
+
+3. **What is the difference between static polymorphism (compile-time polymorphism) and dynamic polymorphism (runtime polymorphism)?**\
+   The main differences between static polymorphism and dynamic polymorphism are as follows:
+
+- Resolution Time: Static polymorphism is resolved at compile-time, whereas dynamic polymorphism is resolved at runtime.
+- Method Binding: Static polymorphism uses early binding or static binding, where the method call is resolved at compile-time based on the reference type. Dynamic polymorphism uses late binding or dynamic binding, where the method call is resolved at runtime based on the actual object type.
+- Inheritance Dependency: Static polymorphism does not require inheritance, as it is achieved through function overloading. Dynamic polymorphism relies on inheritance and function overriding.

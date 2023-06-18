@@ -1,0 +1,57 @@
+---
+title: Static Polymorphism - Templates
+description: Static Polymorphism - Templates
+date: "2023-06-18"
+asked: 0
+---
+
+# Static Polymorphism - Templates
+
+Static polymorphism is a type of polymorphism that collects the information to call a method during compile time while dynamic polymorphism is a type of polymorphism that collects information to call a method at run time. Thus, this is the main difference between static and dynamic polymorphism.
+
+Example:
+
+```java
+public class Example<T> {
+    private T value;
+
+    public Example(T value) {
+        this.value = value;
+    }
+
+    public T getValue() {
+        return value;
+    }
+
+    public static void main(String[] args) {
+        Example<Integer> intExample = new Example<>(10);
+        System.out.println("Integer value: " + intExample.getValue());
+
+        Example<String> stringExample = new Example<>("Hello");
+        System.out.println("String value: " + stringExample.getValue());
+    }
+}
+```
+
+# Useful Links
+
+1. [Static Polymorphism - GeeksforGeeks](https://www.geeksforgeeks.org/static-polymorphism-in-java/)
+2. [Dynamic and Static Polymorphism](https://www.modernescpp.com/index.php/dynamic-and-static-polymorphism)
+
+# Example Questions
+
+1. **What is static polymorphism and how is it achieved using templates?**\
+   Static polymorphism, also known as compile-time polymorphism, is a programming concept where different implementations of a function or class can be used based on the compile-time types of the arguments or template parameters. It is achieved using templates in languages like C++, where generic code can be written to work with different types. During compilation, the templates are instantiated for specific types, generating specialized code for each type.
+
+2. **What are the advantages of using static polymorphism with templates?**\
+   There are several advantages of using static polymorphism with templates:
+
+   - Code reusability: Templates allow for writing generic code that can work with different types, promoting code reuse and reducing redundancy.
+   - Performance: Static polymorphism resolves function calls at compile-time, resulting in faster execution compared to dynamic polymorphism. There is no runtime overhead associated with virtual function dispatch.
+   - Strong type checking: Templates enforce type safety at compile-time, preventing type-related errors. The compiler performs type checking during template instantiation, reducing the risk of runtime errors.
+
+3. **How does static polymorphism using templates differ from dynamic polymorphism?**\
+   Static polymorphism using templates differs from dynamic polymorphism in the following ways:
+   - Resolution time: Static polymorphism resolves function calls at compile-time, while dynamic polymorphism resolves them at runtime.
+   - Performance: Static polymorphism has better runtime performance since there is no overhead associated with virtual function dispatch. Dynamic polymorphism involves vtable lookup and virtual function dispatch, which can impact performance.
+   - Flexibility: Static polymorphism using templates provides flexibility to write generic code that works with different types. Dynamic polymorphism relies on inheritance and virtual functions to achieve runtime polymorphism.

@@ -1,0 +1,52 @@
+---
+title: "Subroutines and Parameter Passing"
+description: "Subroutines and Parameter Passing"
+date: "2023-06-18"
+asked: 0
+---
+
+# Subroutines and Parameter Passing
+
+Subroutines, also known as functions or procedures, are blocks of code that perform a specific task. They allow you to modularize your code, making it more organized, reusable, and easier to maintain. Parameter passing refers to the mechanism of transferring data or arguments to a subroutine.
+
+```python
+def calculate_sum(a, b):
+    result = a + b
+    return result
+
+x = 5
+y = 3
+sum_result = calculate_sum(x, y)
+print("The sum is:", sum_result)
+```
+
+In this code snippet, we have a subroutine named calculate_sum defined using the def keyword. It takes two parameters, a and b. These parameters act as placeholders for the actual values that will be passed when the subroutine is called.
+
+To call the calculate_sum subroutine, we provide the values of x and y (which are 5 and 3 respectively) as arguments. These values are passed to the subroutine, and the code inside the subroutine is executed.
+
+Inside the calculate_sum subroutine, the values of a and b represent the arguments passed during the subroutine call. In this case, a is assigned the value of x (which is 5) and b is assigned the value of y (which is 3).
+
+The code inside the subroutine performs the desired task, which is calculating the sum of a and b. The result is stored in the result variable, and then it is returned using the return statement.
+
+After the subroutine call, the returned value is assigned to the sum_result variable. Finally, the print statement displays the message "The sum is:" followed by the value of sum_result.
+
+In this code snippet, subroutines help in encapsulating the logic of summing two numbers, making the code more modular and reusable. Parameter passing allows us to pass specific values to the subroutine, enabling it to perform its task with the provided arguments.
+
+Subroutines and parameter passing are fundamental concepts in programming, and they play a crucial role in organizing and structuring code for better readability and maintainability.
+
+# Useful Links
+
+1. [Subroutines and Parameter Passing](https://www.programiz.com/python-programming/function-argument)
+2. [Python Functions](https://www.programiz.com/python-programming/function)
+3. [Python Docs](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+
+# Example Questions
+
+1. **What is a subroutine and how does it help in organizing code?**\
+   A subroutine, also known as a function or procedure, is a block of code that performs a specific task. It helps in organizing code by allowing the logic for a particular task to be encapsulated within a separate block, making the code more modular, reusable, and easier to maintain.
+
+2. **Explain the concept of parameter passing in subroutines.**\
+   Parameter passing refers to the mechanism of transferring data or arguments to a subroutine. It allows specific values to be passed to a subroutine as arguments, which are then used as placeholders within the subroutine's code. These arguments can be used to perform calculations, manipulate data, or modify the behavior of the subroutine.
+
+3. **How is parameter passing useful in programming?**\
+   Parameter passing provides flexibility and reusability in programming. It allows us to pass different values to the same subroutine, enabling it to perform the desired task with varying inputs. Parameter passing also helps in reducing code duplication, as the same subroutine can be used with different arguments to achieve different results.

@@ -1,0 +1,64 @@
+---
+title: Referential Integrity in Relational Databases
+description: Overview of referential integrity in relational databases.
+date: "2023-06-18"
+asked: 0
+---
+
+# Referential Integrity in Relational Databases
+
+Referential integrity is a concept in relational databases that ensures the consistency and validity of relationships between tables. It enforces the integrity of the data by maintaining the accuracy and correctness of referential relationships. Here's an overview of referential integrity in relational databases:
+
+## Key Concepts
+
+1. **Primary Key**
+
+   - A primary key is a unique identifier for a record in a table.
+   - It uniquely identifies each row in the table and ensures its uniqueness and integrity.
+   - Primary keys are used as references in establishing relationships with other tables.
+
+2. **Foreign Key**
+
+   - A foreign key is a field in one table that refers to the primary key in another table.
+   - It establishes a relationship between tables, representing the "many" side of a one-to-many relationship.
+   - Foreign keys maintain data consistency and integrity by ensuring that values in the foreign key column match the values in the referenced primary key column.
+
+3. **Referential Integrity Constraint**
+   - A referential integrity constraint is a rule that ensures the validity of relationships between tables.
+   - It specifies the relationship between a foreign key and the corresponding primary key.
+   - The constraint ensures that no foreign key value exists in the table unless it matches a valid primary key value in the referenced table.
+
+## Enforcing Referential Integrity
+
+Referential integrity is typically enforced through the following mechanisms:
+
+1. **Primary Key - Foreign Key Relationship**
+
+   - The foreign key in one table references the primary key in another table.
+   - This relationship defines the dependency between the two tables and ensures the integrity of the data.
+
+2. **CASCADE Option**
+
+   - The CASCADE option defines the action to be taken when a referenced primary key is updated or deleted.
+   - CASCADE UPDATE updates the corresponding foreign keys when the primary key is updated.
+   - CASCADE DELETE deletes the rows with corresponding foreign keys when the primary key is deleted.
+
+3. **NULL or DEFAULT Constraints**
+
+   - NULL or DEFAULT constraints can be applied to foreign keys to handle cases where a referenced primary key value is updated or deleted.
+   - NULL allows the foreign key to have no value, indicating the absence of a valid reference.
+   - DEFAULT assigns a default value to the foreign key when the referenced primary key is updated or deleted.
+
+4. **Trigger-Based Enforcement**
+   - Triggers can be used to implement custom logic for enforcing referential integrity.
+   - Triggers are database objects that execute specific actions when certain events occur, such as an update or delete operation on a primary key.
+
+Enforcing referential integrity ensures that relationships between tables remain valid and consistent. It prevents data anomalies, such as orphaned records or inconsistent references, and maintains the integrity of the database as a whole.
+
+# Useful Links
+
+1. [YouTube - Understanding Referential Integrity](https://www.youtube.com/watch?v=uCAPpVDU_hA)
+2. [IBM Documentation - Referential Integrity](https://www.ibm.com/docs/en/informix-servers/14.10?topic=integrity-referential)
+3. [Intelligent Data Systems - What is Referential Integrity?](https://intelligent-ds.com/blog/what-is-referential-integrity)
+4. [Techopedia - Referential Integrity (RI)](https://www.techopedia.com/definition/1233/referential-integrity-ri)
+5. [Scaler - Referential Integrity in DBMS](https://www.scaler.com/topics/referential-integrity-in-dbms/)

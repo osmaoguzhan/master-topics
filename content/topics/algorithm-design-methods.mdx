@@ -1,0 +1,60 @@
+---
+title: Algorithm Design Techniques
+description: Algorithm Design Techniques
+date: "2023-06-18"
+asked: 0
+---
+
+# Algorithm Design Techniques
+
+## 1. Greedy Method
+
+In the greedy method, at each step, a decision is made to choose the local optimum, without thinking about the future consequences. Example: Fractional Knapsack and Activity Selection Problem.
+
+## 2. Divide and Conquer Method
+
+The Divide and Conquer strategy involves dividing the problem into sub-problem, recursively solving them, and then recombining them for the final answer. Example: Merge Sort and Quick Sort.
+
+## 3. Dynamic Programming Method
+
+The approach of Dynamic Programming is similar to divide and conquer. The difference is that whenever we have recursive function calls with the same result, instead of calling them again we try to store the result in a data structure in the form of a table and retrieve the results from the table. Thus, the overall time complexity is reduced. Example: 0-1 Knapsack, subset-sum problem.
+
+## 4. Linear Programming Method
+
+In Linear Programming, there are inequalities in terms of inputs and maximizing or minimizing some linear functions of inputs.
+Example: Maximum flow of Directed Graph
+
+## 5. Reduction(Transform and Conquer) Method
+
+In this method, we solve a difficult problem by transforming it into a known problem for which we have an optimal solution. Basically, the goal is to find a reducing algorithm whose complexity is not dominated by the resulting reduced algorithms.
+
+## 6. Backtracking Method
+
+This approach is based on exploring each available option at every stage one-by-one. While exploring an option if a point is reached that doesn’t seem to lead to the solution, the program control backtracks one step, and starts exploring the next option. In this way, the program explores all possible course of actions and finds the route that leads to the solution. Example: N-queen problem, maize problem.
+
+## 7. Branch and Bound Method
+
+This technique is very useful in solving combinatorial optimization problem that have multiple solutions and we are interested in find the most optimum solution. In this approach, the entire solution
+
+# Useful Links
+
+1. [Algorithms Design Techniques](https://www.geeksforgeeks.org/algorithms-design-techniques/)
+2. [How algorithm design applied?](https://online.wlu.ca/news/2019/02/12/how-algorithm-design-applied)
+3. [Algorithm design techniques](https://www.javatpoint.com/daa-algorithm-design-techniques)
+
+# Example Questions
+
+1. **What is the key characteristic of the greedy method in algorithm design?**\
+   The greedy method involves making locally optimal choices at each step without considering future consequences.
+
+2. **How does the divide and conquer method work in algorithm design?**\
+   The divide and conquer method involves breaking down a problem into smaller subproblems, solving them recursively, and combining the solutions to obtain the final answer.
+
+3. **What is the main idea behind the dynamic programming method in algorithm design?**\
+   The dynamic programming method aims to reduce the time complexity of recursive function calls by storing and retrieving intermediate results in a data structure, such as a table.
+
+4. **What is the concept behind the reduction (transform and conquer) method in algorithm design?**\
+   The reduction method involves transforming a difficult problem into a known problem with an optimal solution, thus simplifying the overall problem-solving process.
+
+5. **How does the backtracking method work in algorithm design?**\
+   The backtracking method explores each available option at every stage, backtracking when a non-promising path is encountered, and continues until a solution is found. It is useful for solving problems with multiple possible paths.

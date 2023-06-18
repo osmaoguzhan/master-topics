@@ -44,6 +44,10 @@ export const Topic = defineDocumentType(() => ({
       type: "date",
       required: true,
     },
+    asked: {
+      type: "number",
+      required: true,
+    },
   },
   computedFields,
 }));

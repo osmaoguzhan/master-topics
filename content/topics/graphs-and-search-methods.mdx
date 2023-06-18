@@ -1,0 +1,46 @@
+---
+title: Graphs and Their Search Methods
+description: Graphs and Their Search Methods
+date: "2023-06-18"
+asked: 0
+---
+
+# Graphs and Their Search Methods
+
+A Graph is a non-linear data structure consisting of vertices and edges. The vertices are sometimes also referred to as nodes and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph is composed of a set of vertices(V) and a set of edges(E). The graph is denoted by G(E, V).
+Graphs are used to solve many real-life problems. Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network.
+
+## Real Time applications of graphs
+
+1. Graphs are used to represent flow of control in computers.
+2. Graphs are used in social networking sites where users act as nodes and connection between them acts as edges.
+3. In an operating system, graphs are used as resource allocation graphs.
+4. Graphs are used in Google maps to find the shortest route.
+5. Graphs are also used in airlines system for effective route optimization.
+
+## Graph search methods
+
+1. **Breadth First Search (BFS)**
+   Breadth First Search (BFS) is a graph traversal algorithm that starts from a chosen node and explores all of its neighbors at one hop away before visiting all the neighbors at two hops away, and so on.
+   While it can be used on its own, it is most commonly used as the basis for other more goal-oriented algorithms. For example, Shortest Path, Connected Components, and Closeness Centrality all use the BFS algorithm. It can also be used to find the shortest path between nodes or for computing the maximum flow in a flow network.
+
+2. **Depth First Search (DFS)**
+   Depth First Search (DFS) is a graph traversal algorithm that starts from a chosen node, picks one of its neighbors, and then traverses as far as it can along that path before backtracking.
+   Like BFS, DFS can be used on its own, but is more commonly used as a component of other algorithms. For example, Connected Components and Strongly Connected Components use the DFS algorithm. It was originally invented as a strategy for solving mazes and can also be used to generate those mazes.
+
+# Useful Links
+
+- [Graphs and Their Search Methods](https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/)
+- [Graph Data Structure and Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+- [Graph Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/graph_data_structure.htm)
+
+# Example Questions
+
+1. **What is the difference between Breadth First Search (BFS) and Depth First Search (DFS)?**\
+   The main difference between BFS and DFS is the order in which they explore nodes. BFS explores all neighbors at the current level before moving to the next level, while DFS explores as far as possible along each branch before backtracking.
+
+2. **What are some real-life applications of graphs?**\
+   Graphs have various real-life applications, such as representing flow of control in computers, modeling social networking connections, resource allocation in operating systems, optimizing routes in mapping systems like Google Maps, and optimizing routes in airline systems.
+
+3. **How is Depth First Search (DFS) commonly used as a component in other algorithms?**\
+   DFS is often used as a component in algorithms such as finding connected components and strongly connected components in a graph. It was originally designed as a strategy for solving mazes and can also be used to generate maze-like structures.
