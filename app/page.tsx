@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <div className="prose dark:prose-invert grid mt-2 md:grid-cols-2 lg:grid-cols-4 gap-3 max-w-full">
       <div className="text-center text-gray-600 dark:text-gray-300 col-span-full text-4xl">
-        University of Łódź Master's Exam Topics
+        University of Łódź Master&apos;s Exam Topics
       </div>
       <div className="text-center text-gray-600 dark:text-gray-300 col-span-full">
         Click on a topic to learn more about it.

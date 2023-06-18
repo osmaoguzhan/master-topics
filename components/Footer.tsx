@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="text-center text-gray-600 dark:text-gray-300">
@@ -11,7 +13,7 @@ export default function Footer() {
           className="text-gray-600 dark:text-gray-300 hover:scale-110 transition duration-300"
         >
           <span className="sr-only">Github</span>
-          <img
+          <Image
             src="../github.svg"
             alt="github"
             className="dark:invert"
@@ -27,7 +29,7 @@ export default function Footer() {
           className="ml-6 text-gray-600 dark:text-gray-300 hover:scale-110 transition duration-300"
         >
           <span className="sr-only">LinkedIn</span>
-          <img src="../linkedin.svg" alt="linkedin" />
+          <Image src="../linkedin.svg" alt="linkedin" />
         </a>
         {/* twitter */}
         <a
@@ -37,7 +39,7 @@ export default function Footer() {
           className="ml-6 text-gray-600 dark:text-gray-300 hover:scale-110 transition duration-300"
         >
           <span className="sr-only">Twitter</span>
-          <img src="../twitter.svg" alt="twitter" />
+          <Image src="../twitter.svg" alt="twitter" />
         </a>
         {/* instagram */}
         <a
@@ -47,7 +49,7 @@ export default function Footer() {
           className="ml-6 text-gray-600 dark:text-gray-300 hover:scale-110 transition duration-300"
         >
           <span className="sr-only">Instagram</span>
-          <img src="../instagram.svg" alt="instagram" />
+          <Image src="../instagram.svg" alt="instagram" />
         </a>
       </div>
       <div className="mt-4">
